@@ -1,0 +1,205 @@
+.sale {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBD96B;
+    gap: 0px;
+    padding: 20px 0;
+}
+
+.saleImageDiv {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.saleImageDiv .star1 {
+    position: absolute;
+    top: 80px;
+    right: 120px;
+}
+
+.saleImageDiv .star2 {
+    position: absolute;
+    top: 110px;
+    left: 90px;
+}
+
+.saleImageDiv .star3 {
+    position: absolute;
+    bottom: 100px;
+    left: 130px;
+}
+
+.saleImageDiv .star4 {
+    position: absolute;
+    bottom: 150px;
+    right: 160px;
+}
+
+.saleImage {
+    max-height: 650px;
+    max-width: 700px;
+    object-fit: contain;
+    image-rendering: auto;
+    margin: 0 auto;
+}
+
+.saleTextDiv {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+.text .let h1,
+.text .let1 h1,
+.text .let2 h1 {
+    font-size: 64px;
+    color: #000000;
+    font-weight: 700;
+    margin: 0 0 10px;
+    transform: rotate(5deg);
+}
+
+.text .let {
+    width: 350px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 10px 60px;
+    transform: rotate(-10deg);
+    margin: 10px 0;
+}
+
+.saleTextDiv .salePara {
+    font-size: 18px;
+    color: #000000;
+    text-align: left;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.saleTextDiv .salePara .para1,
+.saleTextDiv .salePara .para2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.saleTextDiv .btn {
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.saleTextDiv .btn:hover {
+    background-color: black;
+    color: #EBD96B;
+}
+
+@media (max-width: 768px) {
+    .sale {
+        flex-direction: column;
+    }
+
+    .saleImageDiv {
+        width: 80%;
+    }
+
+    .saleImage {
+        max-width: 500px;
+        max-height: 500px;
+        margin-top: 20px;
+    }
+
+    .saleImageDiv .star1,
+    .saleImageDiv .star2,
+    .saleImageDiv .star3,
+    .saleImageDiv .star4 {
+        display: none;
+    }
+
+    .saleTextDiv {
+        width: 100%;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .text .let h1,
+    .text .let2 h1 {
+        font-size: 50px;
+    }
+
+    .text .let {
+        width: 300px;
+        height: 90px;
+    }
+
+    .saleTextDiv .salePara {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .saleTextDiv .btn {
+        margin: 20px auto 0;
+    }
+}
+
+@media (max-width: 390px) {
+    .saleImageDiv {
+        width: 90%;
+    }
+
+    .saleImage {
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .saleTextDiv {
+        width: 100%;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .text .let h1,
+    .text .let2 h1 {
+        font-size: 40px;
+    }
+
+    .text .let {
+        width: 200px;
+        height: 60px;
+        padding: 5px;
+    }
+
+    .saleTextDiv .salePara {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .saleTextDiv .btn {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+        margin: 20px auto;
+    }
+}

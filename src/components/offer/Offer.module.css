@@ -1,0 +1,275 @@
+
+
+.offer{
+    width:100%;
+    display:flex;
+    background-color: #f4f6f5;
+    padding: 50px 0;
+    
+}
+
+
+
+.offerTextDiv{
+    width:50%;
+    
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+    align-items: center;
+    margin-top:30px;
+    margin-bottom: 30px;
+    
+}
+
+
+ .text .let h1{
+    font-size: 64px;
+    
+    color: #000000;
+    font-weight: 700;
+    margin-right:120px;
+    transform: rotate(5deg);
+}
+ .text  h1{
+    font-size: 64px;
+    
+    color: #000000;
+    font-weight: 700;
+    margin-right:200px;
+}
+
+.text .let{
+    width:442px;
+    height:105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6c744;
+    padding-left:60px;  
+    
+    transform: rotate(-10deg);
+    margin-left:40px;
+    
+}
+.text .let1{
+    transform: rotate(5deg);
+}
+
+
+
+.text .snow{
+    margin-left: 60px;
+}
+
+.boxDiv{
+    display: flex;
+    gap:56px;
+}
+.box{
+    width:132px;
+    height:148px;
+    background-color: #e6c744;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box h1{
+    text-align: center;
+    font-weight: bold;
+    font-size:24px;
+}
+
+.offerTextDiv button{
+    width: 150px;
+    height: 50px;
+    border:2px solid black;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+
+    &:hover{
+        background-color: #e6c744;
+
+    }
+}
+
+.offerImageDiv{
+    width:50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offerImageDiv .offerImage{
+    width:550px;
+    height:550px;
+}    
+
+
+
+@media  (max-width: 768px) {
+
+
+    .offer{
+        width:100%;
+        display:flex;
+        flex-direction: column-reverse;
+        
+        padding: 50px 0;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+
+    .text .let h1{
+        font-size: 50px;
+        
+        color: #000000;
+        font-weight: 700;
+        margin-right:50px;
+        transform: rotate(5deg);
+    }
+     .text  h1{
+        font-size: 50px;
+        
+        color: #000000;
+        font-weight: 700;
+        margin-right:100px;
+        padding-left:50px;
+        
+    }
+    
+    .text .let{
+        width:340px;
+        height:90px;
+        
+        padding-left:0px;  
+        
+        
+    }
+    .text .let1{
+        transform: rotate(5deg);
+    }
+    
+    
+    
+    .text .snow{
+        margin-left: 60px;
+    }
+    
+    
+    .box{
+        width:112px;
+        height:128px;
+        
+    }
+    
+    .box h1{
+        text-align: center;
+        font-weight: bold;
+        font-size:22px;
+    }
+    
+    .offerTextDiv button{
+        width: 140px;
+        height: 40px;
+        
+    }
+    .boxDiv{
+        display: flex;
+        gap:36px;
+    }
+    
+    .offerImageDiv{
+        width:50%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .offerImageDiv .offerImage{
+        width:400px;
+        height:400px;
+    }
+}
+@media  (max-width: 390px) {
+
+
+        .text .let h1{
+        font-size: 40px;
+        
+        color: #000000;
+        font-weight: 700;
+        margin-right:30px;
+        transform: rotate(5deg);
+    }
+     .text  h1{
+        font-size: 40px;
+        
+        color: #000000;
+        font-weight: 700;
+        margin-right:100px;
+        padding-left:50px;
+        
+    }
+    
+    .text .let{
+        width:240px;
+        height:70px;
+        
+        padding-left:0px;  
+        
+        
+    }
+    .text .let1{
+        transform: rotate(5deg);
+    }
+    
+    
+    
+    .text .snow{
+        margin-left: 60px;
+    }
+    
+
+    .boxDiv{
+        display: flex;
+        gap:16px;
+    }
+    
+    .box{
+        width:90px;
+        height:110px;
+        
+    }
+    
+    .box h1{
+        text-align: center;
+        font-weight: bold;
+        font-size:22px;
+    }
+    
+    .offerTextDiv button{
+        width: 140px;
+        height: 40px;
+        
+    }
+    
+    .offerImageDiv{
+        width:50%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .offerImageDiv .offerImage{
+        width:300px;
+        height:300px;
+    }
+}

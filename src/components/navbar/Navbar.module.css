@@ -1,0 +1,184 @@
+.nav {
+    width: 100%;
+    height: 96px;
+    display: flex;
+    background-blend-mode: color-burn;
+    box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: indigo;
+}
+
+.nav .logo {
+    width: 386px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav .logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* Makes the corners rounded in a circular shape */
+}
+
+.nav .logo h1 {
+    font-size: 35px;
+    text-align: center;
+    color: #f5eaea;
+    /* Light color for normal state */
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 0.3s ease;
+    /* Smooth transition for color change */
+}
+
+.nav .logo h1:hover {
+    color: #ff5733;
+    /* Change to a bright color, e.g., orange-red, on hover */
+}
+
+.links {
+    width: 43.75rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 5rem;
+}
+
+.links ul li {
+    font-size: 20px;
+    text-align: center;
+    color: #e8dfdf;
+    &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: .1875rem;
+        font-weight: 500;
+    }
+}
+
+.links button {
+    width: 97px;
+    height: 36px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    &:hover {
+        background-color: #EBD96B;
+        font-weight: 500;
+    }
+}
+
+.menu {
+    display: none;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+@media (max-width: 768px) {
+    .links {
+        display: none;
+    }
+    .menu {
+        display: block;
+        margin-top: 30px;
+    }
+    .nav .logo {
+        margin-left: 25px;
+    }
+    .nav .logo img {
+        width: 70px;
+        height: 70px;
+    }
+    .nav .logo h1 {
+        margin-top: 10px;
+    }
+    .adjust {
+        position: absolute;
+        top: 96px;
+        right: 0;
+        width: 50%;
+        height: 432px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0rem .5rem 1rem 0rem rgba(0, 0, 0, 0.2);
+        z-index: 10000;
+        backdrop-filter: grayscale(100%) blur(5px);
+        /* Applies a full grayscale and a 5-pixel blur */
+        background-color: rgba(255, 255, 255, 0.7)
+    }
+    .adjust ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        margin-bottom: 32px;
+    }
+    .adjust ul li {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .adjust button {
+        width: 140px;
+        height: 45px;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border: .125rem solid #000000;
+        &:hover {
+            background-color: #EBD96B;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .adjust ul li {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .adjust button {
+        width: 130px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border: .125rem solid #000000;
+        &:hover {
+            background-color: #EBD96B;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .nav .logo img {
+        width: 60px;
+        height: 60px;
+    }
+    .nav .logo h1 {
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    .menu {
+        margin-top: 35px;
+    }
+    .adjust ul li {
+        font-size: 20px;
+    }
+}

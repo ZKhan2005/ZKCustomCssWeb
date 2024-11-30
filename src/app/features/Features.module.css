@@ -1,0 +1,252 @@
+
+
+
+.features{
+    width:100%;
+    top:6.25rem;
+    margin: auto;
+}
+
+.container{
+    width:100%;
+    margin:auto;
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 3.9375rem;
+}
+
+.youngsFavourite{
+    width: 90%;
+    height: 6.25rem;
+     display: flex;
+     position: relative;
+   
+}
+
+.youngsFavourite h1{
+    font-size: 40px;
+    font-weight: bolder;
+    position:absolute;
+    z-index: 10000;
+}
+
+.youngsFavourite .feather{
+    position: absolute;
+    left:22.5rem;
+    top:10px;
+        
+}
+
+.card{
+    width:100%;
+    height: 37.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.card .card1{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.card .card2{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.card .card1 .content{
+    width:100%;
+    height:4.125rem;
+    align-items: flex-start;
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    margin-top:1.25rem;
+    margin-left:1.25rem;
+}
+
+.card .card1 .content h3{
+    font-size: 1.25rem;
+    font-weight: 500;
+    
+}
+
+.card .card1 .content p{
+    font-size: .875rem;
+    
+}
+
+.card .card1 .content img{
+    position: absolute;
+    bottom:0rem;
+    right:0rem;
+    width:10.625rem;
+    
+}
+
+
+.card1 .card1Image,.card2 .card1Image{
+
+transition:all 1s ease;
+&:hover{
+    transform: scale(1.1);
+}
+}
+.card .card2 .content{
+    width:100%;
+    height:4.125rem;
+    align-items: flex-start;
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    margin-top:1.25rem;
+    margin-left:1.25rem;
+}
+
+.card .card2 .content h3{
+    font-size: 1.25rem;
+    font-weight: 500;
+    
+}
+
+.card .card2 .content p{
+    font-size: .875rem;
+    
+}
+
+.card .card2 .content img{
+    position: absolute;
+    bottom:0rem;
+    right:0rem;
+    width:10.625rem;
+}
+
+
+@media (max-width: 48rem) {
+
+
+    .youngsFavourite{
+        width: 100%;
+        margin-bottom: 3.125rem;
+        z-index: -11111;
+    }
+    
+    .youngsFavourite h1{
+        font-size: 27.2px;
+        font-weight: bold;
+        top:3.125rem;
+        position:absolute;
+        right:27.5rem;
+        
+    }
+    
+    .youngsFavourite .feather{
+        position: absolute;
+        left:19.375rem;
+        top:3.4375rem;
+        z-index: 0; 
+        width:3.125rem;
+        height: 3.125rem;   
+    }
+
+    .youngsFavourite .feather img{
+        width:2.1875rem;
+        height:2.1875rem;
+    }
+
+
+
+    .card{
+        flex-direction: column;
+    }
+    
+    .card .card1{
+        flex-direction: column;
+    }
+    
+    
+    .card1 .card1Image, .card2 .card1Image{
+
+        width:70%;
+        height:70%;
+    }
+    .card .card1 .content,.card .card2 .content{
+        
+        align-items: center;
+        display:flex;
+        flex-direction: column;
+        position:relative;
+        margin-top:1.875rem;
+        margin-left:0rem;
+       
+    }
+    
+    .card .card1 .content h3,.card .card2 .content h3{
+        font-size: 1.125rem;
+        font-weight: 500;
+        
+    }
+    
+    .card .card1 .content .arrow,.card .card2 .content .arrow{
+        width:6.25rem;
+        top:1.875rem;
+        right:15.625rem;
+        
+    }
+
+    .card{
+       
+        height: 43.75rem;
+        }
+
+}
+
+
+@media (max-width: 24.375rem) {
+
+    .youngsFavourite{
+        
+        margin-bottom: 0rem;
+    }
+
+    .youngsFavourite h1{
+        font-size: 24px;
+        right:7.5rem;
+        top:3.125rem;
+        
+    }
+
+    .youngsFavourite .feather{
+        position: absolute;
+        left:15.625rem;
+        
+    }
+
+    .card .card1 .content h3,.card .card2 .content h3{
+        font-size: 1rem;
+       
+    }
+
+    .card .card1 .content .arrow,.card .card2 .content .arrow{
+        width:6.25rem;
+        top:1.875rem;
+        right:9.375rem;
+        
+    }
+
+}

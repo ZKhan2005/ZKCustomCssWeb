@@ -1,0 +1,326 @@
+
+
+.shop{
+    width:90%;    
+    margin-bottom: 7.5rem;
+    margin:auto;
+    height:auto;
+    margin-top: 3.9375rem;
+    
+    
+}
+
+.newArrival{
+    width: 100%;
+    height: 6.25rem;
+     display: flex;
+     position: relative;
+    
+}
+
+.newArrival h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.newArrival .feather{
+    position: absolute;
+    left:16.25rem;
+    top:.625rem;
+    z-index: -1;    
+}
+.newArrival .board{
+    position: absolute;
+    left:35rem;
+         
+}
+
+
+.sale{
+
+    margin-top: 6.25rem;
+    width: 100%;
+    height: 42.8125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBD96B;
+}
+
+.saleImageDiv{
+    width:50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;  
+}
+
+.saleImageDiv .star1{
+    position: absolute;
+    top:5rem;
+    right:7.5rem;
+    
+}
+.saleImageDiv .star2{
+    position: absolute;
+    top:6.875rem;
+    left:5.625rem;
+    
+}
+.saleImageDiv .star3{
+    position: absolute;
+    bottom:6.25rem;
+    left:8.125rem;
+    
+}
+.saleImageDiv .star4{
+    position: absolute;
+    bottom:9.375rem;
+    right:10rem;
+    
+}
+
+
+.saleImage{
+    
+    height:31.25rem;
+    width:34.375rem;
+    
+    
+}
+
+.saleTextDiv{
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+ .text .let h1{
+    font-size: 4rem;
+    
+    color: #000000;
+    font-weight: 700;
+    margin-right:7.5rem;
+    transform: rotate(5deg);
+}
+ .text  h1{
+    font-size: 4rem;
+    
+    color: #000000;
+    font-weight: 700;
+    margin-right:12.5rem;
+}
+
+.text .let{
+    width:21.375rem;
+    height:6.5625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding-left:3.75rem;  
+    
+    transform: rotate(-10deg);
+    margin-left:2.5rem;
+    
+}
+.text .let1{
+    transform: rotate(5deg);
+}
+
+
+
+.text .snow{
+    margin-left: 3.75rem;
+}
+
+.saleTextDiv .salePara{
+    font-size: 1rem;
+    
+    color: #000000;
+    text-align: left;
+    margin-top: 1.25rem;
+    margin-right:12.5rem;
+    
+}
+
+.saleTextDiv .salePara .para1{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom:1.875rem;
+}
+.saleTextDiv .salePara .para2{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom:1.875rem;
+}
+
+.saleTextDiv .btn{
+    width: 7.5rem;
+    height:2.25rem;
+    font-size: .9375rem;
+    font-weight: 500;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:5rem;
+    margin-right:20.9375rem;
+    border-radius: .625rem;
+    border:.1875rem solid #000000;
+    &:hover{
+        background-color: black;
+        color:#EBD96B;
+        font-weight: 500;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+
+    .board{
+        position: relative;
+        z-index: -100;
+    }
+
+    .embla{
+        position: relative;
+        z-index: -100;
+    }
+    .sale{
+        flex-direction: column;
+    }
+
+    .sale .saleImageDiv{
+        width:75%;
+        height:50%;
+        
+    }
+
+    .saleImage{
+        
+        width:25rem;
+        height:25rem;
+        margin-top: 2.5rem;
+
+    }
+
+    .saleImageDiv .star1,.saleImageDiv .star2,.saleImageDiv .star3,.saleImageDiv .star4{
+        display:none;
+    }
+
+    .sale .saleTextDiv{
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 0rem;
+        padding-left:3.125rem;
+        
+    }
+
+    
+
+   
+    
+     .text .let h1{
+        font-size: 3.125rem;
+        margin-right:0rem;
+        color: #000000;
+        font-weight: 700;
+       
+        
+    }
+     .text  h1{
+        font-size: 3.125rem;
+        color: #000000;
+        font-weight: 700;
+        margin-right:0rem;
+    }
+    
+    .text .let{
+        width:15.625rem;
+        height:5.625rem;
+        padding-left:0rem; 
+        
+    }
+
+    
+.saleTextDiv .salePara{
+    font-size: 1.125rem;
+    
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-right:0rem;
+   
+    
+}
+
+.saleParaDiv{
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.saleTextDiv .salePara .para1,.saleTextDiv .salePara .para2{
+    font-size: 1.25rem;
+}
+
+.saleTextDiv .salePara p{
+    font-size:1.1875rem;
+}
+
+.saleTextDiv .btn{
+    width: 7.5rem;
+    height:2.25rem;
+    font-size: .9375rem;
+    font-weight: 500;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:3.125rem;
+    margin-right: 0rem;
+    margin-left:8.125rem;
+    
+}
+
+
+    .newArrival h1{
+        font-size: 1.7rem;
+    }
+
+    .newArrival .feather{
+        left:11.3rem;
+        top:10;
+    }
+
+    .newArrival .feather img{
+        width:2.5rem;
+        height:2.5rem;
+    }
+}
+
+
+@media (max-width: 390px) {
+
+    .newArrival h1{
+        font-size: 1.5rem;
+    }
+
+    .newArrival .feather{
+        left:10rem;
+        top:10;
+    }
+
+    .newArrival .feather img{
+        width:2.1875rem;
+        height:2.1875rem;
+    }
+}

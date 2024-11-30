@@ -1,0 +1,70 @@
+
+
+.embla{
+margin-top:100px;
+  overflow: hidden;
+  margin-bottom: 100px;
+  }
+.embla__container {
+  display: flex;
+  
+  
+}
+.embla__slide {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3.9375rem;
+}
+
+.imgDiv{
+    width:229px;
+    height:334px;
+    
+    display: flex;
+    justify-content: center;
+    overflow: hidden;   
+    border-radius: 10px;
+    
+}
+.cardImg{
+    width:224px;
+    height:381px;
+    transition: all 1s ;
+    &:hover{
+        transform: scale(1.1);}
+    
+}
+
+.cardText{
+    width:100%;
+    position:relative;
+}
+
+.cardText h3{
+    font-size:16px;
+    
+    text-align: left;
+}
+
+ .arrow{
+    position: absolute;
+    top:0;
+    right:10px;  
+    width:50px;
+    
+}
+
+
+@media (max-width: 768px) {
+
+
+    .board{
+        position: relative;
+        z-index: -100;
+    }
+
+    .embla{
+        position: relative;
+        z-index: -100;
+    }
+}
