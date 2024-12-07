@@ -47,7 +47,7 @@ function Paydaysale() {
                   voucher code for your next purchase
                 </p>
 
-                <p className={style.para2}>1st June - 10 June 2021</p>
+                <p className={style.para2}>22 Dec - 31 Dec 2024</p>
 
                 <p>*Terms and conditions applied</p>
               </div>
